@@ -1,1 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&family=Montenegrin+Gothic+One&family=Moon+Dance&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&family=Montenegrin+Gothic+One&family=Moon+Dance&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@200..800&family=Montenegrin+Gothic+One&family=Moon+Dance&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 @import "tailwindcss";
+
+.archivo-black {
+  font-family: "Archivo Black", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.share-tech {
+  font-family: "Share Tech", cursive;
+  font-weight: 800;
+}
+
+.source-code-pro {
+    font-family: "Source Code Pro", cursive;
+    font-weight: 800;
+}
+
+.roboto-mono {
+  font-family: "Roboto Mono", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* nav infinite scroll */
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 15s linear infinite;
+}
