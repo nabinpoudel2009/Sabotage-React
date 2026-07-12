@@ -1,45 +1,29 @@
 import React from 'react'
-import { FaCartArrowDown } from "react-icons/fa";
-import Marquee from 'react-fast-marquee';
-
+import { FaCartArrowDown } from "react-icons/fa"
+import NavMovingText from './NavMovingText';
 
 const navLinks = [
     {
         name: "Home",
-        href: '/'
+        href: '#'
     },
     {
         name: "Collection",
-        href: "/collection",
+        href: "#collection",
     },
     {
         name: "Categories",
-        href: "/categories",
+        href: "#categories",
     },
     {
         name: "sale",
-        href: "/sale",
-    },
-]
-
-const movingText = [
-    {
-        title: 'Limited edition pieces'
-    },
-    {
-        title: "Streetwear redefined"
-    },
-    {
-        title : "New drop — Void Series"
-    },
-    {
-        title: "Free returns on all orders"
+        href: "#sale",
     },
 ]
 
 const Nav = () => {
     return (
-        <nav className='overflow-hidden'>
+        <nav className='overflow-hidden bg-transparent backdrop-blur-md sticky top-0 z-50 '>
             <div className='max-w-7xl mx-auto'>
                 <div className='flex items-center p-3 sm:p-5 justify-between'>
 
@@ -63,28 +47,12 @@ const Nav = () => {
                     </div>
 
                     {/* Cart and More */}
-                    <div className='flex items-center gap-x-2'>
+                    <div className='flex items-center gap-x-2 p-1'>
                         <button className=' px-3 py-2 rounded-sm border border-gray-800/90 hover:shadow-xs shadow-white/40 hover:border-gray-400/50 transition-all cursor-pointer duration-300 ease-in-out'>LOGIN</button>
-                        <button className='hidden md:block bg-[#c0392b] px-3 py-2 hover:bg-[#c03a2bc6] transition-all duration-200 cursor-pointer'>SIGN UP</button>
+                        <button className='hidden md:block bg-[#d02e20eb] px-3 py-2 hover:bg-[#c03a2bc6] transition-all duration-200 cursor-pointer'>SIGN UP</button>
                         <FaCartArrowDown className='fill-[#b8b8b8d1] hover:fill-[#c9c9c9] cursor-pointer transition-all duration-200 text-3xl' />
                     </div>
                 </div>
-            </div>
-            <div className="bg-[#c0392b] py-1">
-                <Marquee
-                    speed={60}
-                    gradient={false}
-                    autoFill={true}
-                >
-                    {movingText.map((text, index) => (
-                        <p
-                            key={index}
-                            className="mx-16 whitespace-nowrap font-[System-UI] text-gray-100 "
-                        >
-                            {text.title}
-                        </p>
-                    ))}
-                </Marquee>
             </div>
         </nav>
     )
