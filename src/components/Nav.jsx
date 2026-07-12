@@ -23,7 +23,7 @@ const navLinks = [
 
 const Nav = () => {
     return (
-        <nav className='overflow-hidden bg-transparent backdrop-blur-md sticky top-0 z-50 '>
+        <nav className='overflow-hidden bg-transparent backdrop-blur-md sticky top-0 z-5000 '>
             <div className='max-w-7xl mx-auto'>
                 <div className='flex items-center p-3 sm:p-5 justify-between'>
 

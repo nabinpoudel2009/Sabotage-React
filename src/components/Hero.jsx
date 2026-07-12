@@ -2,6 +2,7 @@ import React from 'react'
 import { FaArrowDown } from "react-icons/fa";
 
 const Home = () => {
+
     return (
         <section className='overflow-hidden'>
             <div className="h-screen -mt-17 sm:min-h-130 md:min-h-140 w-full flex flex-col items-center justify-center">
