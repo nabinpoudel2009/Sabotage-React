@@ -25,7 +25,7 @@ const categories = [
 const Categories = () => {
     return (
         <>
-            <section>
+            <section id='categories'>
                 <h1 className='text-center text-5xl md:text-7xl bebas-neue'>Categories</h1>
                 <div className='p-2 my-5 max-w-7xl mx-auto grid grid-cols-1 gap-y-7 sm:grid-cols-2 md:grid-cols-3 gap-x-5'>
                     {categories.map((categories, key) => 

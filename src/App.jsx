@@ -3,6 +3,8 @@ import Nav from './components/Nav'
 import Hero from './components/Hero';
 import NavMovingText from './components/NavMovingText';
 import Categories from './components/Categories';
+import ShopHeading from './components/ShopHeading';
+import ShopMain from './components/ShopMain';
 
 const App = () => {
 
@@ -12,6 +14,8 @@ const App = () => {
             <NavMovingText />
             <Hero />
             <Categories />
+            <ShopHeading />
+            <ShopMain />
         </>
     )
 }

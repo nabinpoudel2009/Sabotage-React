@@ -7,7 +7,7 @@ const Home = () => {
         <section className='overflow-hidden'>
             <div className="h-screen -mt-17 sm:min-h-130 md:min-h-140 w-full flex flex-col items-center justify-center">
                 <p className='uppercase text-[#d02e20eb] source-code-pro mb-5 text-xs sm:text-sm md:text-base'>New Drop — Spring 2025</p>
-                <h1 className="scale-y-120 absolute bebas-neue select-none pointer-events-none text-[17vw] overflow-hidden sm:text-[13vw] mt-10 font-black uppercase tracking-[0.3em] text-white/15 sm:text-white/10 ml-5 sm:ml-10 whitespace-nowrap">
+                <h1 className="scale-y-120 absolute bebas-neue select-none pointer-events-none text-[17vw] overflow-hidden sm:text-[13vw] mt-10 font-black uppercase tracking-[0.3em] text-white/15 sm:text-white/8 ml-5 sm:ml-10 whitespace-nowrap">
                     SABOTAGE
                 </h1>
                 <div className='text-center bebas-neue tracking-widest scale-y-120 z-50'>
