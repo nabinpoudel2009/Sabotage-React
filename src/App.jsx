@@ -5,17 +5,20 @@ import NavMovingText from './components/NavMovingText';
 import Categories from './components/Categories';
 import ShopHeading from './components/ShopHeading';
 import ShopMain from './components/ShopMain';
+import { ProductProvider } from './context/PorductContext';
 
 const App = () => {
 
     return (
         <>
-            <Nav />
-            <NavMovingText />
-            <Hero />
-            <Categories />
-            <ShopHeading />
-            <ShopMain />
+            <ProductProvider>
+                <Nav />
+                <NavMovingText />
+                <Hero />
+                <Categories />
+                <ShopHeading />
+                <ShopMain />
+            </ProductProvider>
         </>
     )
 }
