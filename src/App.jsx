@@ -6,6 +6,12 @@ import Categories from './components/Categories';
 import ShopHeading from './components/ShopHeading';
 import ShopMain from './components/ShopMain';
 import { ProductProvider } from './context/PorductContext';
+import SubFooter from './components/SubFooter';
+import Login from "./pages/Login";
+import { Route, Routes } from 'react-router';
+import SignUp from './pages/SignUp';
+import Home from "./pages/Home";
+import Collection from './pages/Collection';
 
 const App = () => {
 
@@ -13,11 +19,12 @@ const App = () => {
         <>
             <ProductProvider>
                 <Nav />
-                <NavMovingText />
-                <Hero />
-                <Categories />
-                <ShopHeading />
-                <ShopMain />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/signUp" element={<SignUp />} />
+                    <Route path="/collection" element={<Collection />} />
+                </Routes>
             </ProductProvider>
         </>
     )

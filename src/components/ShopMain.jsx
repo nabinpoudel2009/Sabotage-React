@@ -60,9 +60,9 @@ const ShopMain = () => {
                         </select>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5">
-                        {products.map((product) => (
+                        {products.map((product, key) => (
                             <div
-                                key={product.id}
+                                key={key}
                                 className="rounded-lg p-4 bg-neutral-500/30"
                             >
                                 <div className="w-full h-64 group flex items-center justify-center">
