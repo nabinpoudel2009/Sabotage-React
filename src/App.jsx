@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router';
 import SignUp from './pages/SignUp';
 import Home from "./pages/Home";
 import Collection from './pages/Collection';
+import Footer from './components/Footer';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
                     <Route path="/signUp" element={<SignUp />} />
                     <Route path="/collection" element={<Collection />} />
                 </Routes>
+                <Footer />
             </ProductProvider>
         </>
     )

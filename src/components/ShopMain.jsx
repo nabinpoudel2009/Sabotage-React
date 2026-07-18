@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useProducts } from '../context/PorductContext';
 import { CiFilter } from "react-icons/ci";
 
@@ -11,8 +11,6 @@ const ShopMain = () => {
     
     const { products } = useProducts();
     const { loading } = useProducts();
-    
-    const [selectedCategory, setSelectedCategory] = useState("All");
 
 
     if (loading) {
@@ -78,7 +76,7 @@ const ShopMain = () => {
                                     {product.title}
                                 </h2>
                         
-                                <p className="mt-2 text-lg font-bold flex justify-center">
+                                <p className="mt-2 text-lg font-[System-UI] flex justify-center">
                                     ${product.price}
                                 </p>
                                 <button className='flex hover:bg-red-500/50 active:scale-95 transition-all ease-in-out duration-150 mt-1 items-center mx-auto font-[System-UI] px-2 py-1 rounded-md border border-white/30 bg-red-500/40'>

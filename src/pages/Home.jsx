@@ -4,6 +4,7 @@ import Categories from "../components/Categories";
 import ShopHeading from "../components/ShopHeading";
 import ShopMain from "../components/ShopMain";
 import SubFooter from "../components/SubFooter";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
         <ShopHeading />
         <ShopMain />
         <SubFooter />
+        <Footer />
     </>
   );
 }
