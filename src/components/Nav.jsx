@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCartArrowDown } from "react-icons/fa"
-import NavMovingText from './NavMovingText';
 import { Link, NavLink } from 'react-router';
+import { useCart } from '../context/CartContext';
 
 const navLinks = [
     {
@@ -23,6 +23,9 @@ const navLinks = [
 ]
 
 const Nav = () => {
+
+    const { itemCount } = useCart();
+
     return (
         <nav className='overflow-hidden bg-transparent backdrop-blur-md sticky top-0 z-5000 '>
             <div className='max-w-7xl mx-auto'>
@@ -55,10 +58,17 @@ const Nav = () => {
                     </div>
 
                     {/* Cart and More */}
-                    <div className='flex items-center gap-x-2 p-1'>
+                    <div className='hidden md:flex items-center gap-x-2 p-1'>
                         <button className=' px-3 py-2 rounded-sm border border-gray-800/90 hover:shadow-xs shadow-white/40 hover:border-gray-400/50 transition-all cursor-pointer duration-300 ease-in-out'>LOGIN</button>
                         <Link to="/signup"><button className='hidden md:block bg-[#d02e20eb] px-3 py-2 hover:bg-[#c03a2bc6] transition-all duration-200 cursor-pointer'>SIGN UP</button></Link>
-                        <FaCartArrowDown className='fill-[#b8b8b8d1] hover:fill-[#c9c9c9] cursor-pointer transition-all duration-200 text-3xl' />
+                        <NavLink to={'/cart'} className='relative'>
+                            <FaCartArrowDown className='fill-[#b8b8b8d1] hover:fill-[#c9c9c9] cursor-pointer transition-all duration-200 text-3xl' />
+                            {itemCount > 0 && (
+                                <span className='absolute -top-2 -right-2 min-w-5 h-5 rounded-full bg-[#d02e20eb] text-white text-xs flex items-center justify-center px-1'>
+                                    {itemCount}
+                                </span>
+                            )}
+                        </NavLink>
                     </div>
                 </div>
             </div>

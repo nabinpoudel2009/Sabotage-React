@@ -15,7 +15,6 @@ function Home() {
         <ShopHeading />
         <ShopMain />
         <SubFooter />
-        <Footer />
     </>
   );
 }

@@ -17,12 +17,12 @@ export const ProductProvider = ({ children }) => {
             setLoading(false);
         } catch (error) {
             console.log(error);
-        }
-    }
+        };
+    };
 
     useEffect(() => {
         fetchProducts();
-    }, [])
+    }, []);
 
     return (
         <ProductContext.Provider

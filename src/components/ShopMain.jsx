@@ -1,5 +1,6 @@
 import React from 'react'
 import { useProducts } from '../context/PorductContext';
+import { useCart } from '../context/CartContext';
 import { CiFilter } from "react-icons/ci";
 
 
@@ -7,11 +8,9 @@ const categories = ["all", "men", "women", "kids"];
 
 
 const ShopMain = () => {
-
-    
     const { products } = useProducts();
     const { loading } = useProducts();
-
+    const { addToCart } = useCart();
 
     if (loading) {
         return (
@@ -79,7 +78,10 @@ const ShopMain = () => {
                                 <p className="mt-2 text-lg font-[System-UI] flex justify-center">
                                     ${product.price}
                                 </p>
-                                <button className='flex hover:bg-red-500/50 active:scale-95 transition-all ease-in-out duration-150 mt-1 items-center mx-auto font-[System-UI] px-2 py-1 rounded-md border border-white/30 bg-red-500/40'>
+                                <button
+                                    onClick={() => addToCart(product)}
+                                    className='flex hover:bg-red-500/50 active:scale-95 transition-all ease-in-out duration-150 mt-1 items-center mx-auto font-[System-UI] px-2 py-1 rounded-md border border-white/30 bg-red-500/40'
+                                >
                                     Add To Cart
                                 </button>
                             </div>

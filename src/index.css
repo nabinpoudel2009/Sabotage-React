@@ -88,3 +88,7 @@
 body::-webkit-scrollbar {
     display: none;
 }
+
+.no-scroll-bar::-webkit-scrollbar {
+    display: none;
+}
