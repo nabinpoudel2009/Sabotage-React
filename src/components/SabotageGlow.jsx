@@ -12,7 +12,7 @@ const SabotageGlow = () => {
                         y: e.nativeEvent.offsetY,
                     })
                 }
-                className="relative flex items-center p-2 Ubuntu justify-center overflow-hidden"
+                className="relative hidden lg:flex items-center p-2 Ubuntu justify-center overflow-hidden"
             >
                 <h3
                     className="uppercase text-[15rem] text-neutral-500/0 font-black backdrop-blur-3xl bg-clip-text select-none"
