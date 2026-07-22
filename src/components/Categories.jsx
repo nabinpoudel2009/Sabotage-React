@@ -50,6 +50,9 @@ const Categories = () => {
                         </div>
                     )}
                 </div>
+                <div className='max-w-7xl mx-auto text-center font-[System-UI] uppercase text-red-400 font-bold'>
+                    This is borken
+                </div>
             </section>
         </>
     )

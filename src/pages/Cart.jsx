@@ -39,7 +39,7 @@ const Cart = () => {
                 </div>
                 <button
                     onClick={clearCart}
-                    className='rounded-md border font-[System-UI] border-white/20 px-3 py-2 text-sm text-neutral-300 transition hover:bg-white/10'
+                    className='rounded-md border font-[System-UI] border-white/20 hover:border-red-300/50 px-3 py-2 text-sm text-red-400 tracking-wide transition hover:bg-white/10'
                 >
                     Clear Cart
                 </button>

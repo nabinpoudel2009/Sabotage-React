@@ -5,16 +5,17 @@ import ShopHeading from "../components/ShopHeading";
 import ShopMain from "../components/ShopMain";
 import SubFooter from "../components/SubFooter";
 import Footer from "../components/Footer";
+import SabotageGlow from "../components/SabotageGlow";
 
 function Home() {
   return (
     <>
         <NavMovingText />
         <Hero />
-        <Categories />
         <ShopHeading />
         <ShopMain />
         <SubFooter />
+        <SabotageGlow />
     </>
   );
 }
